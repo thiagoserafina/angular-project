@@ -10,3 +10,9 @@ main {
   flex-direction: column;
   gap: 20px;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+  width: fit-content;
+}
