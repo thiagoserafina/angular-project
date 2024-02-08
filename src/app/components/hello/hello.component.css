@@ -1,0 +1,10 @@
+h1 {
+  font-weight: normal;
+  color: #8ca3c9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 span {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
