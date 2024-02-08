@@ -1,30 +1,35 @@
 <div class="topbar">
-  <a [routerLink]="['/']">
-    <div class="topbar__left">
-      <div class="topbar__logo">
-        <img src="favicon.ico" alt="logo" />
+  <sidebar />
+
+  <a [routerLink]="['/']" class="middle">
+    <div class="topbar-middle">
+      <div class="topbar-logo">
+        <lucide-icon name="rocket" class="logo" [size]="35" />
       </div>
 
-      <p class="topbar__title">Angular Project</p>
+      <div class="middle">
+        <p class="topbar-title">Rocket Project</p>
+      </div>
     </div>
+    <span></span>
   </a>
 
-  <div class="topbar__right">
-    <div class="topbar__icon-container">
-      <div class="topbar__icon">
+  <div class="topbar-right">
+    <div class="topbar-icon-container">
+      <div class="topbar-icon">
         <lucide-icon name="search" class="my-icon" />
       </div>
     </div>
 
-    <div class="topbar__icon-container">
-      <div class="topbar__icon">
+    <div class="topbar-icon-container">
+      <div class="topbar-icon">
         <lucide-icon name="bell" class="my-icon" />
-        <span class="topbar__icon-badge">2</span>
+        <span class="topbar-icon-badge">2</span>
       </div>
     </div>
 
-    <div class="topbar__icon-container">
-      <img src="assets/images/avatar.jpg" alt="avatar" class="topbar__avatar" />
+    <div class="topbar-icon-container">
+      <img src="assets/images/avatar.jpg" alt="avatar" class="topbar-avatar" />
     </div>
   </div>
 </div>

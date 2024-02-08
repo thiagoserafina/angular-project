@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="image.src" class="card-img-top" alt="..." />
+
+  <div class="card-body">
+    <div class="card-info">
+      <h3 class="card-title">{{ image.title }}</h3>
+      <p class="card-text">{{ image.description }}</p>
+    </div>
+
+    <div class="card-actions">
+      <a [routerLink]="['/gallery', image.id]" class="button">View</a>
+    </div>
+  </div>
+</div>

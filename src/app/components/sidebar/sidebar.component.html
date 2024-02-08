@@ -1,0 +1,15 @@
+<div class="menu" (click)="openSidebar()">
+  <lucide-icon name="menu-icon" class="my-icon" />
+</div>
+
+<div class="sidebar" [class.active]="isOpen">
+  <div class="sidebar-close" (click)="closeSidebar()">
+    <lucide-icon name="x" class="close-icon" />
+  </div>
+
+  <div class="sidebar-menu" (click)="closeSidebar()">
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/gallery']">Gallery</a>
+    <a [routerLink]="['/about']">About</a>
+  </div>
+</div>
