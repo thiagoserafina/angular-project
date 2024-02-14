@@ -1,0 +1,33 @@
+main {
+  display: flex;
+  padding: 2.5%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #8ca3c9;
+}
+
+.login-container {
+  width: 30%;
+  height: 97.5%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.title-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  color: #fff;
+  gap: 10px;
+  font-size: 50px;
+
+  .logo {
+    color: #fff;
+    display: flex;
+  }
+}

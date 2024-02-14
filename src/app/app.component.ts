@@ -13,5 +13,5 @@ import { TopbarComponent } from './components/topbar/topbar.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'angular-project';
+  isLogged = false;
 }
