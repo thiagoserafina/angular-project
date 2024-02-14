@@ -46,7 +46,7 @@
 }
 
 .button {
-  background-color: #8ca9c9;
+  background-color: var(--primary-color);
   color: #000;
   text-align: center;
   border: none;

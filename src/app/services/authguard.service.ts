@@ -32,7 +32,7 @@ export class AuthGuardService
     if (this.authService.IsAuthenticated()) {
       return true;
     } else {
-      this.router.navigate(['/Login']);
+      this.router.navigate(['/login']);
       return false;
     }
   }

@@ -3,11 +3,12 @@ import { TopbarModule } from '../../components/topbar/topbar.module';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [TopbarModule, ReactiveFormsModule],
+  imports: [TopbarModule, ReactiveFormsModule, ButtonComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })

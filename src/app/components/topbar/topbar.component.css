@@ -16,7 +16,7 @@
   width: auto;
 
   .logo {
-    color: #8ca3c9;
+    color: var(--primary-color);
     display: flex;
   }
 }
@@ -52,7 +52,7 @@
 
 .middle:hover {
   span {
-    background-color: #8ca3c9;
+    background-color: var(--primary-color);
     width: 200px;
     height: 2px;
     transition: width 0.3s ease-in-out;
@@ -60,14 +60,14 @@
   }
 
   .topbar-title {
-    color: #8ca3c9;
+    color: var(--primary-color);
   }
 }
 
 .topbar-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .topbar-icon {
@@ -77,13 +77,19 @@
 
 .topbar-icon-container {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.my-icon {
+  display: flex;
 }
 
 .topbar-icon-badge {
   position: absolute;
   top: -5px;
   right: 15px;
-  background-color: #8ca3c9;
+  background-color: var(--primary-color);
   color: #fff;
   border-radius: 50%;
   height: 15px;

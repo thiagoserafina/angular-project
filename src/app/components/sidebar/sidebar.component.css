@@ -52,7 +52,7 @@
   }
 
   a:hover {
-    color: #8ca3c9;
+    color: var(--primary-color);
     background-color: #efefef;
   }
 }
@@ -79,6 +79,6 @@
   background-color: #efefef;
 
   .close-icon {
-    color: #8ca3c9;
+    color: var(--primary-color);
   }
 }

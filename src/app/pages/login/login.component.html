@@ -1,9 +1,10 @@
 <main>
   <section class="login-container">
-    <h1>Login</h1>
-    <lucide-icon name="rocket" class="logo" [size]="20" />
-    <p>RocketStore</p>
-    <form [formGroup]="login" (submit)="onSubmit($event)">
+    <div class="login-title">
+      <h1>Login</h1>
+    </div>
+
+    <form [formGroup]="login" (submit)="onSubmit($event)" class="login-form">
       <div class="form-group">
         <label for="username">Username:</label>
 
@@ -30,8 +31,15 @@
         />
       </div>
 
-      <button type="submit" class="btn">Login</button>
+      <div class="login-button-container">
+        <app-button type="submit" class="btn" [text]="'Login'" />
+      </div>
     </form>
+
+    <footer>
+      <p>Don't have an account?</p>
+      <a routerLink="/register">Register</a>
+    </footer>
   </section>
 
   <section class="title-container">
