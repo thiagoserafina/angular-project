@@ -4,7 +4,7 @@ main {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  background-color: #8ca3c9;
+  background-color: var(--primary-color);
 }
 
 .login-container {
