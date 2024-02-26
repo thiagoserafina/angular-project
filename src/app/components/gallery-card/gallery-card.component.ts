@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Product } from '../../models/product';
 
 @Component({
   selector: 'gallery-card',
@@ -9,19 +10,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './gallery-card.component.css',
 })
 export class GalleryCardComponent {
-  @Input() image: Image = {
+  @Input() product: Product = {
     id: 0,
-    alt: '',
     src: '',
     title: '',
     description: '',
   };
-}
-
-interface Image {
-  id: number;
-  alt?: string;
-  src: string;
-  title: string;
-  description: string;
 }

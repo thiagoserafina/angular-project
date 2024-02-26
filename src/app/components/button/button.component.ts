@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FetchServiceService } from '../../services/fetch-service.service';
 
 @Component({
@@ -9,20 +9,10 @@ import { FetchServiceService } from '../../services/fetch-service.service';
   styleUrl: './button.component.css',
 })
 export class ButtonComponent {
-  btnTxts = ['Button 1', 'Button 2', 'Button 3'];
-  btnTxtIdx = 0;
+  @Input() text: string = 'Button';
+  @Output() onClick: EventEmitter<void> = new EventEmitter<void>();
 
-  constructor(private fetchService: FetchServiceService) {}
-
-  ngOnInit(): void {}
-
-  onClick(): void {
-    // this.fetchService
-    //   .fetchData()
-    //   .pipe()
-    //   .forEach((data) => {
-    //     console.log(data);
-    //   });
-    this.btnTxtIdx = (this.btnTxtIdx + 1) % this.btnTxts.length; // 0, 1, 2, 0, 1, 2, ...
+  handleClick() {
+    this.onClick.emit();
   }
 }
