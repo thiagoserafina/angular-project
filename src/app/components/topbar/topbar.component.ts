@@ -16,9 +16,9 @@ export class TopbarComponent {
   router: Router = inject(Router);
   isLogged = localStorage.getItem('isLogged') === 'true';
 
-  logout() {
-    localStorage.setItem('loggedIn', 'false');
-    this.authService.logout();
-    this.router.navigate(['/login']);
-  }
+  // logout() {
+  //   localStorage.setItem('loggedIn', 'false');
+  //   this.authService.logout();
+  //   this.router.navigate(['/login']);
+  // }
 }
