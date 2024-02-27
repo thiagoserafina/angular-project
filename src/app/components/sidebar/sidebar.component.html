@@ -3,13 +3,22 @@
 </div>
 
 <div class="sidebar" [class.active]="isOpen">
-  <div class="sidebar-close" (click)="closeSidebar()">
-    <lucide-icon name="x" class="close-icon" />
+  <div>
+    <div class="sidebar-close" (click)="closeSidebar()">
+      <lucide-icon name="x" class="close-icon" />
+    </div>
+
+    <div class="sidebar-menu" (click)="closeSidebar()">
+      <a [routerLink]="['/home']">Home</a>
+      <a [routerLink]="['/gallery']">Gallery</a>
+      <a [routerLink]="['/about']">About</a>
+    </div>
   </div>
 
-  <div class="sidebar-menu" (click)="closeSidebar()">
-    <a [routerLink]="['/home']">Home</a>
-    <a [routerLink]="['/gallery']">Gallery</a>
-    <a [routerLink]="['/about']">About</a>
+  <div class="sidebar-footer">
+    <div class="sidebar-icon" (click)="logout()">
+      Log out
+      <lucide-icon name="log-out" class="my-icon" />
+    </div>
   </div>
 </div>

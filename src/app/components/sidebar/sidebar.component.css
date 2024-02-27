@@ -22,6 +22,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow-y: auto;
   transition: left 0.3s ease-in-out;
 }
@@ -81,4 +82,34 @@
   .close-icon {
     color: var(--primary-color);
   }
+}
+
+.sidebar-footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  color: #b23b3b;
+  border-top: 1px solid #b9b9b9;
+  margin: 0 10px;
+}
+
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 16px;
+
+  .my-icon {
+    display: flex;
+  }
+}
+
+.sidebar-icon:hover {
+  color: white;
+  background-color: #b23b3b;
 }
