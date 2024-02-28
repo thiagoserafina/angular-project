@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product, ProductIterator } from '../models/product';
+import { Observable, from, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -34,5 +35,9 @@ export class ProductService {
 
   [Symbol.iterator](): IterableIterator<Product> {
     return new ProductIterator(this.products);
+  }
+
+  getProducts(): Observable<Product[]> {
+    return of(this.products);
   }
 }
