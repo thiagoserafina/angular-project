@@ -27,6 +27,7 @@ export class GalleryComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
+    console.log('GalleryComponent destroyed');
     this.sub.unsubscribe();
   }
 }

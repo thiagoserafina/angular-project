@@ -34,7 +34,7 @@ main {
 .form-group {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
 
   label {
